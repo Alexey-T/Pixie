@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="PixieDemo"/>
+      <Scaled Value="True"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
+    </General>
+    <BuildModes>
+      <Item Name="Debug" Default="True">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="../bin/PixieDemo-$(TargetOS)-$(TargetCPU)"/>
+          </Target>
+          <SearchPaths>
+            <OtherUnitFiles Value="../../source/common;../../source/htmlview;../../source/svgview;../../source/paintbox;../../source/tagbar;../../source/markdown;../common;../../package"/>
+            <UnitOutputDirectory Value="../lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <SyntaxMode Value="Delphi"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <Checks>
+              <IOChecks Value="True"/>
+              <RangeChecks Value="True"/>
+              <OverflowChecks Value="True"/>
+              <StackChecks Value="True"/>
+              <IncludeAssertionCode Value="True"/>
+            </Checks>
+            <VerifyObjMethodCallValidity Value="True"/>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <DebugInfoType Value="dsDwarf3"/>
+              <UseHeaptrc Value="True"/>
+            </Debugging>
+          </Linking>
+        </CompilerOptions>
+      </Item>
+      <Item Name="Release">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="../bin/PixieDemo-$(TargetOS)-$(TargetCPU)"/>
+          </Target>
+          <SearchPaths>
+            <OtherUnitFiles Value="../../source/common;../../source/htmlview;../../source/svgview;../../source/paintbox;../../source/tagbar;../../source/markdown;../common;../../package"/>
+            <UnitOutputDirectory Value="../lib/$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <SyntaxMode Value="Delphi"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Optimizations>
+              <OptimizationLevel Value="2"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+              <LinkerOptions Value="-s"/>
+            </Options>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-Xs"/>
+          </Other>
+        </CompilerOptions>
+      </Item>
+      <Item Name="gtk2">
+        <MacroValues Count="1">
+          <Macro1 Name="LCLWidgetType" Value="gtk2"/>
+        </MacroValues>
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="../bin/PixieDemo-$(TargetOS)-$(TargetCPU)-$(LCLWidgetType)"/>
+          </Target>
+          <SearchPaths>
+            <OtherUnitFiles Value="../../source/common;../../source/htmlview;../../source/svgview;../../source/paintbox;../../source/tagbar;../../source/markdown;../common;../../package"/>
+            <UnitOutputDirectory Value="../lib/$(TargetCPU)-$(TargetOS)-$(LCLWidgetType)"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <SyntaxMode Value="Delphi"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Optimizations>
+              <OptimizationLevel Value="2"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <LinkerOptions Value="-s"/>
+            </Options>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-Xs"/>
+          </Other>
+        </CompilerOptions>
+      </Item>
+      <Item Name="gtk3">
+        <MacroValues Count="1">
+          <Macro2 Name="LCLWidgetType" Value="gtk3"/>
+        </MacroValues>
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="../bin/PixieDemo-$(TargetOS)-$(TargetCPU)-$(LCLWidgetType)"/>
+          </Target>
+          <SearchPaths>
+            <OtherUnitFiles Value="../../source/common;../../source/htmlview;../../source/svgview;../../source/paintbox;../../source/tagbar;../../source/markdown;../common;../../package"/>
+            <UnitOutputDirectory Value="../lib/$(TargetCPU)-$(TargetOS)-$(LCLWidgetType)"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <SyntaxMode Value="Delphi"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Optimizations>
+              <OptimizationLevel Value="2"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <LinkerOptions Value="-s"/>
+            </Options>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-Xs"/>
+          </Other>
+        </CompilerOptions>
+      </Item>
+      <Item Name="qt">
+        <MacroValues Count="1">
+          <Macro3 Name="LCLWidgetType" Value="qt"/>
+        </MacroValues>
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="../bin/PixieDemo-$(TargetOS)-$(TargetCPU)-$(LCLWidgetType)"/>
+          </Target>
+          <SearchPaths>
+            <OtherUnitFiles Value="../../source/common;../../source/htmlview;../../source/svgview;../../source/paintbox;../../source/tagbar;../../source/markdown;../common;../../package"/>
+            <UnitOutputDirectory Value="../lib/$(TargetCPU)-$(TargetOS)-$(LCLWidgetType)"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <SyntaxMode Value="Delphi"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Optimizations>
+              <OptimizationLevel Value="2"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <LinkerOptions Value="-s"/>
+            </Options>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-Xs"/>
+          </Other>
+        </CompilerOptions>
+      </Item>
+      <Item Name="qt5">
+        <MacroValues Count="1">
+          <Macro4 Name="LCLWidgetType" Value="qt5"/>
+        </MacroValues>
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="../bin/PixieDemo-$(TargetOS)-$(TargetCPU)-$(LCLWidgetType)"/>
+          </Target>
+          <SearchPaths>
+            <OtherUnitFiles Value="../../source/common;../../source/htmlview;../../source/svgview;../../source/paintbox;../../source/tagbar;../../source/markdown;../common;../../package"/>
+            <UnitOutputDirectory Value="../lib/$(TargetCPU)-$(TargetOS)-$(LCLWidgetType)"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <SyntaxMode Value="Delphi"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Optimizations>
+              <OptimizationLevel Value="2"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <LinkerOptions Value="-s"/>
+            </Options>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-Xs"/>
+          </Other>
+        </CompilerOptions>
+      </Item>
+      <Item Name="qt6">
+        <MacroValues Count="1">
+          <Macro5 Name="LCLWidgetType" Value="qt6"/>
+        </MacroValues>
+        <CompilerOptions>
+          <Version Value="11"/>
+          <Target>
+            <Filename Value="../bin/PixieDemo-$(TargetOS)-$(TargetCPU)-$(LCLWidgetType)"/>
+          </Target>
+          <SearchPaths>
+            <OtherUnitFiles Value="../../source/common;../../source/htmlview;../../source/svgview;../../source/paintbox;../../source/tagbar;../../source/markdown;../common;../../package"/>
+            <UnitOutputDirectory Value="../lib/$(TargetCPU)-$(TargetOS)-$(LCLWidgetType)"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <SyntaxMode Value="Delphi"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Optimizations>
+              <OptimizationLevel Value="2"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <LinkerOptions Value="-s"/>
+            </Options>
+          </Linking>
+          <Other>
+            <CustomOptions Value="-Xs"/>
+          </Other>
+        </CompilerOptions>
+      </Item>
+      <SharedMatrixOptions Count="5">
+        <Item1 ID="731042118501" Modes="gtk2" Type="IDEMacro" MacroName="LCLWidgetType" Value="gtk2"/>
+        <Item2 ID="731042118502" Modes="gtk3" Type="IDEMacro" MacroName="LCLWidgetType" Value="gtk3"/>
+        <Item3 ID="731042118503" Modes="qt" Type="IDEMacro" MacroName="LCLWidgetType" Value="qt"/>
+        <Item4 ID="731042118504" Modes="qt5" Type="IDEMacro" MacroName="LCLWidgetType" Value="qt5"/>
+        <Item5 ID="731042118505" Modes="qt6" Type="IDEMacro" MacroName="LCLWidgetType" Value="qt6"/>
+      </SharedMatrixOptions>
+    </BuildModes>
+    <RequiredPackages>
+      <Item>
+        <PackageName Value="LCL"/>
+      </Item>
+    </RequiredPackages>
+    <Units>
+      <Unit>
+        <Filename Value="PixieDemo.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="PixieDemoMain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <Target>
+      <Filename Value="../bin/PixieDemo"/>
+    </Target>
+    <SearchPaths>
+      <OtherUnitFiles Value="../../source/common;../../source/htmlview;../../source/svgview;../../source/paintbox;../../source/tagbar;../../source/markdown;../common;../../package"/>
+      <UnitOutputDirectory Value="../lib/$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <SyntaxMode Value="Delphi"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <Checks>
+        <IOChecks Value="True"/>
+        <RangeChecks Value="True"/>
+        <OverflowChecks Value="True"/>
+        <StackChecks Value="True"/>
+      </Checks>
+      <VerifyObjMethodCallValidity Value="True"/>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf3"/>
+      </Debugging>
+    </Linking>
+  </CompilerOptions>
+</CONFIG>
